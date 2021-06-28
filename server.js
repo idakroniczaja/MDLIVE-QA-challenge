@@ -5,7 +5,9 @@ const app = express();
 
 const data = require('./data')
 
-
+app.get('/', (req, res) => {
+res.redirect('/apps')
+})
 
 app.get('/apps', (req, res) => {
 //destructuring req.query
